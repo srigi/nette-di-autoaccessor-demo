@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+# Please drop tailwind binaries into this folder
+# Download from https://github.com/tailwindlabs/tailwindcss/releases
+# Note: rename "macos" to "darwin"!
+
+platform=`uname -s | tr '[:upper:]' '[:lower:]'`-`uname -m`
+
+./bin/tailwindcss-$platform -i src/main.css -o www/styles/main.css $1

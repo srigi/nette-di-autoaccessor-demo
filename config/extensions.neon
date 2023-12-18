@@ -1,0 +1,22 @@
+application:
+	errorPresenter: Error
+	mapping:
+		*: [App, Modules\*, Presenters\*Presenter]
+
+
+database:
+	dsn: "sqlite:%appDir%/../.data/webproject.sqlite3"
+	# CREATE TABLE calendar (
+	#  id INTEGER PRIMARY KEY,
+	#  startDate DATE NOT NULL
+	# );
+
+
+di:
+	export:
+		parameters: no
+		tags: no
+
+
+latte:
+	strictTypes: yes

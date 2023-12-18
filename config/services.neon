@@ -1,0 +1,14 @@
+search:
+	- in: %appDir%
+		classes:
+			- App\**UseCase\*
+			- App\**Repository
+			- App\**RepositoryAccessor
+
+
+services:
+	# need to manually add RepositoryAccessor
+	# search above didn't worked
+	- App\Domain\Calendar\RepositoryAccessor
+	- App\Forms\StartDate::create
+	- App\RouterFactory::create

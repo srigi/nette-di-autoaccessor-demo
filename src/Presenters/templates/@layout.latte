@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>{ifset title}{include title|stripHtml} · {/ifset}Webproject</title>
+
+  <link rel="icon" href="/favicon.png" type="image/png" sizes="32x32">
+  <link rel="stylesheet" href="/styles/main.css" />
+  {block styles}
+  {/block}
+</head>
+<body>
+  <header class="bg-slate-800 border-b-4 border-slate-600">
+    <main class="container h-[168px] flex items-center justify-between">
+      <a n:href="Default:default" class="flex gap-4 items-center text-[72px] small-caps text-cyan-400 hover:text-cyan-300">
+        <picture>
+          <source srcSet="/images/logo.avif" type="image/avif" />
+          <img
+            width="90"
+            height="90"
+            loading="lazy"
+            decoding="async"
+            src="/images/logo.webp"
+            alt="website logo" />
+        </picture>
+        WebProject
+      </a>
+    </main>
+  </header>
+
+  {include content}
+
+  {block scripts}
+  {/block}
+</body>
+</html>
