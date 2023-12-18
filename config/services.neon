@@ -2,7 +2,6 @@ search:
 	- in: %appDir%
 		classes:
 			- App\**UseCase\*
-			- App\**Repository
 			- App\**RepositoryAccessor
 
 

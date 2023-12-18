@@ -1,0 +1,4 @@
+search:
+	- in: %appDir%
+		classes:
+			- App\**Repository\InMemory
